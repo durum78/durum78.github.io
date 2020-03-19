@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+	background-image: url(img/bodybackground.jpg);
+	/*background-color: #222222;*/
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: 'Lato', sans-serif;
+}
+
+/*----------МЕНЮ НАЧАЛО----------*/
+
+.header {
+	margin: 0px;
+	padding: 0px;
+	height: 120px;
+	background-color: #fff;
+	background-size: auto;
+	display: flex;
+
+}
+
+.logo {
+	height: 84px;
+	margin: auto 0;
+	padding: 8px;
+	/*background-color: #72221E;*/
+}
+
+.logoa {
+	height: 84px;
+}
+
+.menuword {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.ansv1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.number1 {
+	color: #000;
+	text-decoration: none;
+	font-size: 25px;
+	margin-top: 15px;
+	font-weight: lighter;
+}
+
+.number2 {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.numberblock {
+	display: flex;
+	margin-top: -15px;
+	margin-left: 50px;
+}
+
+.ansv {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.ansva {
+	color: #4A2C00;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px 40px 5px 40px;
+}
+
+.ansvaact {
+	color: #E8C172;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px 40px 5px 40px;
+	background-color: #f5f5f5;
+}
+
+.ansva:hover {
+	color: #E8C172;
+	transition: 0.2s;
+	background-color: #f5f5f5;
+}
+
+.ansvainv {
+	position: relative;
+	right: 120px;
+	top: 84px;
+	text-align: center;
+	background-color: #fff;
+	width: 100%;
+	padding: 5px;
+	transition: 0.5s;
+}
+
+/*МЕНЮ ДЛЯ ТЕЛЕФОНА НАЧАЛО*/
+/*МОБИЛКА*/
+@media (max-width : 1000px) {
+.menuword {
+	display: none;
+}
+.main-item {
+	display: block;
+}
+
+.bludo {
+	display: flex;
+	flex-wrap: wrap;
+	height: 600px;
+	width: 450px;
+	background-color: #fff;
+	margin: 30px 10px 30px 10px;
+	padding: 0px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 1px #000;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.logobludo {
+	height: 340px;
+	/*width: 100%;*/
+	border-radius: 5px;
+	text-align: center;
+}
+
+.nazvaniekat {
+	display: flex;
+	color: #4A2C00;
+	background-color: #BDBDBD;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 60px;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.nazvanie {
+	display: flex;
+	color: #4A2C00;
+	background-color: #BDBDBD;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 33px;
+	font-weight: bold;
+	flex-wrap: wrap;
+	margin: 10px 10px 3px 10px;
+}
+
+.cena {
+	display: flex;
+	color: #4A2C00;
+	text-decoration: none;
+	font-size: 45px;
+	flex-wrap: wrap;
+	margin: 5px 10px 5px 10px;
+}
+
+.zakazat {
+	display: flex;
+	color: #4A2C00;
+	text-decoration: none;
+	font-size: 42px;
+	font-weight: bold;
+	text-decoration: none;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: auto 10px 13px 20px;
+	box-shadow: 0px 0px 0px 3px #000;
+	padding: 2px 14px 2px 14px;
+	justify-content: center;
+	background-color: #fff;
+	height: 70px;
+	flex-direction: column;
+}
+
+.cenzak {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto 0px 0px 0px;
+	padding-top: 5px;
+	background-image: url(img/bodybackgroundwhite.jpg);
+	-webkit-background-size: 80px;
+	background-size: 80px;
+}
+
+.zakazat:hover {
+	background-color: #72221E;
+	color: #E8C172;
+	transition: 0.3s;
+}
+
+/*ОФОРМЛЕНИЕ ЗАКАЗА НАЧАЛО*/
+
+.zagolovok {
+	text-align: center;
+	color: #fff;
+	font-size: 100px;
+	padding: 30px 40px 30px 40px;
+}
+
+.zakaz {
+	color: #fff;
+	font-size: 60px;
+	padding: 30px 50px 30px 50px;
+	text-align: left;
+	width: 100%;
+}
+
+.akcia {
+	width: 80%;
+}
+
+}/*MEDIA----------*/
+/*КОМП*/
+@media (min-width : 1000px) {
+.main-item {
+	display: none;
+}
+
+.bludo {
+	display: flex;
+	flex-wrap: wrap;
+	height: 400px;
+	width: 300px;
+	background-color: #fff;
+	margin: 30px 10px 30px 10px;
+	padding: 0px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 1px #000;
+	flex-direction: column;
+}
+
+.logobludo {
+	height: 225px;
+	/*width: 100%;*/
+	border-radius: 5px;
+	text-align: center;
+}
+
+.nazvaniekat {
+	display: flex;
+	color: #4A2C00;
+	background-color: #BDBDBD;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: bold;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.nazvanie {
+	display: flex;
+	color: #4A2C00;
+	background-color: #BDBDBD;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+	flex-wrap: wrap;
+	margin: 6px 6px 0px 6px;
+}
+
+.cena {
+	display: flex;
+	color: #4A2C00;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 5px auto 0px auto;
+	/*margin: 5px 0px 0px 5px;*/
+	text-align: center;
+	justify-content: center;
+}
+
+.zakazat {
+	display: flex;
+	color: #4A2C00;
+	text-decoration: none;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+	margin: auto 10px 10px 10px;
+	box-shadow: 0px 0px 0px 3px #000;
+	padding: 2px;
+	justify-content: center;
+	background-color: #fff;
+}
+
+.cenzak {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto 0px 0px 0px;
+	padding-top: 10px;
+	background-image: url(img/bodybackgroundwhite.jpg);
+	-webkit-background-size: 80px;
+	background-size: 80px;
+}
+
+.zakazat:hover {
+	background-color: #72221E;
+	color: #E8C172;
+	transition: 0.3s;
+}
+
+/*ОФОРМЛЕНИЕ ЗАКАЗА НАЧАЛО*/
+
+.zagolovok {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	padding: 30px 40px 30px 40px;
+	width: 100%;
+}
+
+.zakaz {
+	color: #fff;
+	width: 100%;
+	font-size: 30px;
+	padding: 30px 50px 30px 50px;
+	text-align: left;
+}
+
+.akcia {
+	width: 50%;
+}
+
+}/*MEDIA----------*/
+
+.sub-menu {
+	position: absolute;
+	/*margin: 40px 0px 0px 20%;*/
+	left: 25%;
+}
+
+.main-item {
+	background-image: url(img/menub.png);
+	background-size: 100%;
+	height: 40px;
+	width: 40px;
+	background-color: #F5F5F5;
+	margin-top: 25px;
+	position: relative;
+	margin: auto 25px auto auto;
+}
+
+.ansvainv {
+	color: #4A2C00;
+	text-decoration: none;
+	font-size: 70px;
+	padding: 0px 30%;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 0 3px #000;
+}
+
+.sub-menu { 
+   display: none;
+} 
+.main-item:focus ~ .sub-menu, 
+.main-item:active ~ .sub-menu, 
+.sub-menu:hover { 
+   display: block;
+}
+
+/*МЕНЮ ДЛЯ КОМПЬЮТЕРА КОНЕЦ*/
+/*----------МЕНЮ КОНЕЦ----------*/
+/*----------БЛЮДА НАЧАЛО----------*/
+
+.menublocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*ОФОРМЛЕНИЕ ЗАКАЗА КОНЕЦ*/
