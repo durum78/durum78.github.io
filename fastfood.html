@@ -12,9 +12,43 @@
 	<link rel="mask-icon" href="img/icon70.png" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="right-nav-style.css">
 </head>
 <body>
 
+	 <input type="checkbox" id="nav-toggle" hidden>
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: http://timpietrusky.com/advanced-checkbox-hack 
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo"> 
+            <a href="#">Durum доставка шашлыка</a> 
+        </h2>
+        <ul>
+            <li><a href="meat.html">Мясо</a>
+            <li><a href="fish.html">Рыба</a>
+            <li><a href="soup.html">Супы</a>
+            <li><a href="fastfood.html">Фаст-фуд</a>
+            <li><a href="salad.html">Салаты</a>
+            <li><a href="drink.html">Напитки</a>
+        </ul>
+    </nav>
 <!----------МЕНЮ НАЧАЛО---------->
 
 <div class="header">
@@ -26,24 +60,15 @@
 
 	<div class="menuword">
 		<div class="numberblock">
-			<p class="number1">Наш номер: </p> <p class="number2">2140808</p> <p class="number1"> График работы: с 11:00 до 23:00</p>
-		</div>
-		
-		<div class="ansv1">
-			<div class="ansv">
-				<a class="ansvaact" href="menu.html">Меню</a>
-				<a class="ansva" href="kontakts.html">Контакты</a>
-				<a class="ansva" href="dostavka.html">Доставка</a>
+			<div class="boxnumber" style="margin: -20px 0;">
+				<p class="number1">Наш номер: </p> <p class="number2">2140808</p> <p class="number1"> График работы: с 11:00 до 23:00</p>
 			</div>
-		</div>	
+			<div class="boxnumber" style="margin: -20px 0;">
+				<p class="number1">Дурум, доставка шашлыка.</p><p class="number2">Горячий шашлык, горячая доставка!</p>
+			</div>
+		</div>
 	</div>
 
-	<a class="main-item" href="javascript:void(0);" tabindex="1" ></a> 
-	<ul class="sub-menu"> 
-   <a class="ansvainv" href="menu.html">Меню</a>
-	<a class="ansvainv" href="kontakts.html">Контакты</a>
-	<a class="ansvainv" href="dostavka.html">Доставка</a>
-</ul> 
 </div>
 
 
@@ -51,6 +76,18 @@
 <!----------МЕНЮ КОНЕЦ---------->
 
 <!----------БЛОКИ МЕНЮ НАЧАЛО---------->
+<div class="menu">
+		<a class="minimenu" href="meat.html">МЯСО</a>
+		<a class="minimenu" href="fish.html">РЫБА</a>
+		<a class="minimenu" href="soup.html">СУПЫ</a>
+		<a style="border-bottom: 3px solid #fff;" class="minimenu" href="fastfood.html">ФАСТ-ФУД</a>
+		<a class="minimenu" href="salad.html">САЛАТЫ</a>
+		<a class="minimenu" href="drink.html">НАПИТКИ</a>
+</div>
+
+<div style="width: 100%; display: flex; justify-content: space-around; margin: -50px 0 -70px 0;">	
+	<p style="font-size: 70px; border: 5px dotted #000; background-color: #fff;">ФАСТ-ФУД</p>
+</div>
 
 <div class="menublocks">
 
