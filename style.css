@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 body {
-	background-image: url(img/bodybackground.jpg);
-	/*background-color: #222222;*/
+	background-image: url(img/bodybackgroundwhite.jpg);
+	background-color: #fff;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	font-family: 'Lato', sans-serif;
+	font-family: Roboto Condensed,sans-serif;
 }
 
 /*----------МЕНЮ НАЧАЛО----------*/
@@ -13,11 +14,26 @@ body {
 .header {
 	margin: 0px;
 	padding: 0px;
-	height: 120px;
-	background-color: #fff;
+	background-color: #FFDA8F;
 	background-size: auto;
 	display: flex;
+	display: flex;
+	flex-direction: row;
+}
 
+.menu {
+	padding: 5px 10px;
+	background-color: #73231E;
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 0 0 5px 0 #000;
+}
+
+.minimenu {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
 }
 
 .logo {
@@ -44,11 +60,15 @@ body {
 	flex-wrap: wrap;
 }
 
+.boxnumber {
+	display: flex;
+	flex-direction: row;
+}
+
 .number1 {
 	color: #000;
 	text-decoration: none;
 	font-size: 25px;
-	margin-top: 15px;
 	font-weight: lighter;
 }
 
@@ -57,50 +77,16 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 25px;
-	margin-top: 15px;
 }
 
 .numberblock {
 	display: flex;
-	margin-top: -15px;
 	margin-left: 50px;
+	flex-direction: column;
 }
 
-.ansv {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.ansva {
-	color: #4A2C00;
-	text-decoration: none;
-	font-size: 30px;
-	padding: 5px 40px 5px 40px;
-}
-
-.ansvaact {
-	color: #E8C172;
-	text-decoration: none;
-	font-size: 30px;
-	padding: 5px 40px 5px 40px;
-	background-color: #f5f5f5;
-}
-
-.ansva:hover {
-	color: #E8C172;
-	transition: 0.2s;
-	background-color: #f5f5f5;
-}
-
-.ansvainv {
-	position: relative;
-	right: 120px;
-	top: 84px;
-	text-align: center;
-	background-color: #fff;
-	width: 100%;
-	padding: 5px;
+.minimenu:hover {
+	color: #FFDA8F;
 	transition: 0.5s;
 }
 
@@ -112,6 +98,10 @@ body {
 }
 .main-item {
 	display: block;
+}
+
+.minimenu {
+	display: none;
 }
 
 .bludo {
@@ -204,23 +194,16 @@ body {
 
 /*ОФОРМЛЕНИЕ ЗАКАЗА НАЧАЛО*/
 
-.zagolovok {
-	text-align: center;
+.dostavka {
+	margin-top: 30px;
+	background-color: #232323;
 	color: #fff;
-	font-size: 100px;
-	padding: 30px 40px 30px 40px;
-}
-
-.zakaz {
-	color: #fff;
-	font-size: 60px;
+	width: 100%;
+	font-size: 30px;
 	padding: 30px 50px 30px 50px;
 	text-align: left;
-	width: 100%;
-}
-
-.akcia {
-	width: 80%;
+	text-shadow: 0 0 10px #000;
+	border: 15px dashed #fff;
 }
 
 }/*MEDIA----------*/
@@ -230,16 +213,23 @@ body {
 	display: none;
 }
 
+.nav {
+	display: none;
+}
+
+.nav-toggle {
+	display: none;
+}
+
 .bludo {
 	display: flex;
 	flex-wrap: wrap;
 	height: 400px;
 	width: 300px;
 	background-color: #fff;
-	margin: 30px 10px 30px 10px;
+	margin: 30px 50px 30px 50px;
 	padding: 0px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 10px 1px #000;
 	flex-direction: column;
 }
 
@@ -320,20 +310,16 @@ body {
 
 /*ОФОРМЛЕНИЕ ЗАКАЗА НАЧАЛО*/
 
-.zagolovok {
-	text-align: center;
-	color: #fff;
-	font-size: 50px;
-	padding: 30px 40px 30px 40px;
-	width: 100%;
-}
-
-.zakaz {
+.dostavka {
+	margin-top: 30px;
+	background-color: #232323;
 	color: #fff;
 	width: 100%;
 	font-size: 30px;
 	padding: 30px 50px 30px 50px;
 	text-align: left;
+	text-shadow: 0 0 10px #000;
+	border: 15px dashed #fff;
 }
 
 .akcia {
