@@ -53,7 +53,7 @@
     /* вид курсора */
     cursor: pointer;
     /* размер шрифта */
-    font-size: 1.2em;
+    font-size: 50px/*1.2em*/;
     line-height: 1;
     /* всегда поверх других элементов страницы */
     z-index: 2001;
