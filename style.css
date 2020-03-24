@@ -205,6 +205,25 @@ body {
 	text-shadow: 0 0 10px #000;
 	border: 15px dashed #fff;
 }
+	
+
+.tnumber1 {
+	color: #000;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: lighter;
+	text-align: left;
+	float: left;
+}
+
+.tnumber2 {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;
+	float: left;
+}
 
 }/*MEDIA----------*/
 /*КОМП*/
